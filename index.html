@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Convergence&display=swap">
+    <script src="https://kit.fontawesome.com/e4476a4fa2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <main class ="weather-container">
+    <h1 style="  background: linear-gradient(to right,#4facfe, #38ef7d);
+                -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent; text-align:center;"> Weather Condition</h1>
+        
+        <div class ="search">
+    <input type ="text" placeholder="enter your place" class ="input" >
+    <button class="btn" ><i class="fa-solid fa-magnifying-glass fa-1x"></i></button>
+</div>
+        <section class="weather-info" >
+            <div class="location-date-container">
+                <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3 id ="city">Durgapur</h3>
+                </div>
+                <div class="date-time">
+                    <h5 id ="date-time">18-Jan,sat</h5>
+                </div>
+            </div>
+                <div class ="image">
+                <img src="assets/weather/clouds.svg" alt ="it is clear" class="image-one">           
+            <div class="weather-summary">
+                <h1 class="temp-txt"> 29℃</h1>
+                <h1 class="condition-txt">cloud</h1>
+            </div>
+        </div>
+        <div class="weather-conditions-container">
+            <div class="weather-condition-two">
+            <div class="condition-item">
+                <i class="fa-solid fa-droplet fa-2x "></i>
+            </div>
+        <div class="condition-item">
+            <h5 class ="regular-txt"> Humidity</h5>
+            <h5 class="humdity-value">55% </h5>
+        </div>
+        </div>
+        <div class="weather-condition-two">
+        <div class="condition-item">
+            <i class="fa-solid fa-wind fa-2x"></i>        
+        </div>
+        <div class="condition-item">
+            <h5 class ="regular-txt"> wind speed</h5>
+            <h5 class="wind-speed">1 M/s </h5>
+        </div>
+    </div>
+        </div>
+
+        </section> 
+        <section class ="search-city section-message" style ="display:none">
+            <img class="message-img" src="search-city.png">
+            <div>
+                <h1>Search City</h1>
+            <h4 class ="regular-text">
+                find out weather conditions of the city
+            </h4>
+        </div>
+        </section>
+    </section> 
+    <section class ="search-city not-found section-message" style ="display:none">
+        <img class="message-img" src="not-found.png">
+        <div>
+            <h1>Search City</h1>
+        <h4 class ="regular-text">
+            find out weather conditions of the city
+        </h4>
+    </div>
+    </section>       
+        </main>        
+        <script src="script.js"></script>
+</body>
+</html>
