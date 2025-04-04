@@ -67,7 +67,7 @@ body {
 }
 
 .suggestions-list li:hover {
-    background-color: #eee;
+    background-color: #000;
 }
 
 .input {
